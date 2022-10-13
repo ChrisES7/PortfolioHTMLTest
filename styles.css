@@ -78,7 +78,7 @@ header ul a {
 
 header ul a:hover {
   transform: scale(0.9);
-  color: red;
+  color: #08ffa0;
   transition: 0.4s ease;
 }
 
@@ -98,22 +98,23 @@ header ul a:hover {
   width: 90%;
 }
 
-#top div {
+#top {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
 
-  background-color: white;
+  background-color: #293340;
   min-height: 90%;
   padding: 20px;
   margin: 20px;
 }
 
-#top div:nth-child(2) {
+/* #top div:nth-child(2) { */
+#right-main-top {
   flex-direction: column;
   align-items: flex-start;
-  color: red;
+  color: white;
 }
 
 #top div h2 {
@@ -147,20 +148,46 @@ header ul a:hover {
 
 #left-main-top {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-#left-main-top p {
+#left-main-top-top p {
   display: flex;
-  border-left: solid 2px black;
+  border-left: solid 2px white;
+  color: white;
   padding: 20px;
 }
 
-#left-main-top img {
+#left-main-top-top img {
   /* Hover makes something to image */
   width: 200px;
   border-radius: 120px;
   padding: 20px;
+  transition: 0.6s ease;
+  z-index: 6;
+}
+
+#left-main-top-top {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Rewired the whole top section just for this */
+#socialIconsDiv {
+  display: flex; /* hide it until its ready */
+  flex-direction: row;
+  background-color: red;
+  width: 90%;
+  opacity: 0%;
+  transform: translateY(-50px); /* then put it at 25px to slide down */
+  transition: 0.6s ease;
+}
+
+#socialIconsDiv:hover {
+  transition: 0.6s ease;
+}
+#socialIconsDiv img {
+  width: 60px;
 }
 
 #second {
