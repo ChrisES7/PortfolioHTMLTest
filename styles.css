@@ -71,5 +71,61 @@ header ul a {
   text-decoration: none;
   font-weight: 400;
   font-size: 14pt;
+  margin: 0px 5px;
   color: white;
+}
+
+header ul a:hover {
+  transform: scale(0.9);
+  color: red;
+}
+
+#first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 70vh;
+  background-color: yellow;
+}
+#top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 90%;
+}
+
+#top div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: white;
+  min-height: 90%;
+  padding: 20px;
+  margin: 20px;
+}
+
+#top div:nth-child(2) {
+  align-items: flex-start;
+  color: red;
+}
+
+#top div h2 {
+  font-size: 45pt;
+}
+
+#right-main-top button {
+  border-radius: 8px;
+}
+
+#second {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 60vh;
 }
