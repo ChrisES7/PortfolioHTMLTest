@@ -73,11 +73,13 @@ header ul a {
   font-size: 14pt;
   margin: 0px 5px;
   color: white;
+  transition: 0.4s ease;
 }
 
 header ul a:hover {
   transform: scale(0.9);
   color: red;
+  transition: 0.4s ease;
 }
 
 #first {
@@ -101,7 +103,7 @@ header ul a:hover {
   justify-content: center;
   align-items: center;
   align-content: center;
-  flex-direction: column;
+
   background-color: white;
   min-height: 90%;
   padding: 20px;
@@ -109,16 +111,56 @@ header ul a:hover {
 }
 
 #top div:nth-child(2) {
+  flex-direction: column;
   align-items: flex-start;
   color: red;
 }
 
 #top div h2 {
   font-size: 45pt;
+  margin-bottom: 20px;
 }
 
 #right-main-top button {
-  border-radius: 8px;
+  border-radius: 18px;
+  padding: 5px 12px;
+  border: none;
+  transition: 0.4s ease; /* Oh wow this whole time i forgot the seconds */
+  background-color: #e6eaf4;
+  width: 30%;
+  height: 40px;
+}
+
+#right-main-top button:hover {
+  transition: 0.4s ease;
+  opacity: 0.8;
+  background-color: #d1d4dc;
+  cursor: pointer;
+}
+
+#right-main-top button:active {
+  transition: 0.4s ease;
+  opacity: 0.8;
+  background-color: #08ffa0;
+  cursor: pointer;
+}
+
+#left-main-top {
+  display: flex;
+  flex-direction: row;
+}
+
+#left-main-top p {
+  display: flex;
+  border-left: solid 2px black;
+  padding: 20px;
+}
+
+#left-main-top img {
+  /* Hover makes something to image */
+  width: 200px;
+  border-radius: 120px;
+  padding: 20px;
 }
 
 #second {
