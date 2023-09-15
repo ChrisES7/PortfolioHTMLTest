@@ -12,11 +12,15 @@ leftMainTopImg.addEventListener("mouseover", function rotateImage(e) {
   // social media icons
   //Not hidden,Slide Down from current posi.,Opacity 100
 
-  document.querySelector("#socialIconsDiv").style.transform =
-    "translateY(25px) ";
-
-  setTimeout(function functionName() {
-    document.querySelector("#socialIconsDiv img").style.margin = "0px 7px";
+  setTimeout(function () {
+    document.querySelector("#socialIconsDiv").style.transform =
+      "translateY(25px)";
+    document.querySelector("#socialIconsDiv img:nth-child(1)").style.transform =
+      "translateX(-50px)";
+    document.querySelector("#socialIconsDiv img:nth-child(3)").style.transform =
+      "translateX(50px)";
+    document.querySelector("#socialIconsDiv img:nth-child(4)").style.transform =
+      "translateX(90px)";
   }, 300);
 
   // transform: translateY(25px) translateX(50px);
@@ -37,10 +41,24 @@ leftMainTopImg.addEventListener("mouseout", function rotateImage(e) {
   e.target.style.transform = "";
 
   document.querySelector("#socialIconsDiv").style.transform =
-    "translateY(-50px)";
+    "translateY(-100px)";
+  document.querySelector("#socialIconsDiv img:nth-child(1)").style.transform =
+    "translateX(50px)";
+  document.querySelector("#socialIconsDiv img:nth-child(3)").style.transform =
+    "translateX(-50px)";
+  document.querySelector("#socialIconsDiv img:nth-child(4)").style.transform =
+    "translateX(-90px)";
   document.querySelector("#socialIconsDiv").style.opacity = "0%";
 
   // setTimeout(() => {
   //   document.querySelector("#socialIconsDiv").style.display = "none";
   // }, 1500);
 });
+
+function scrollToProjects() {
+  document.querySelector("#second").scrollIntoView({
+    behavior: "smooth",
+  });
+}
+
+// document.querySelector('.cards').addEventListener('mouseover')
