@@ -62,3 +62,11 @@ function scrollToProjects() {
 }
 
 // document.querySelector('.cards').addEventListener('mouseover')
+
+// const cardFour = document.querySelector(".cards:nth-child(3)");
+// const allCards = document.querySelectorAll(".cards");
+//
+// console.log(cardFour.style.ow);
+// allCards.forEach((item) => {
+//   console.log(item.style.padding);
+// });
