@@ -12,15 +12,15 @@ leftMainTopImg.addEventListener("mouseover", function rotateImage(e) {
   // social media icons
   //Not hidden,Slide Down from current posi.,Opacity 100
 
-  setTimeout(function () {
+  setTimeout(function() {
     document.querySelector("#socialIconsDiv").style.transform =
-      "translateY(25px)";
+      "translateY(-15px)";
     document.querySelector("#socialIconsDiv img:nth-child(1)").style.transform =
-      "translateX(-50px)";
+      "translateX(-5px)";
     document.querySelector("#socialIconsDiv img:nth-child(3)").style.transform =
-      "translateX(50px)";
-    document.querySelector("#socialIconsDiv img:nth-child(4)").style.transform =
-      "translateX(90px)";
+      "translateX(5px)";
+    // document.querySelector("#socialIconsDiv img:nth-child(4)").style.transform =
+    //   "translateX(30px)";
   }, 300);
 
   // transform: translateY(25px) translateX(50px);
@@ -46,8 +46,8 @@ leftMainTopImg.addEventListener("mouseout", function rotateImage(e) {
     "translateX(50px)";
   document.querySelector("#socialIconsDiv img:nth-child(3)").style.transform =
     "translateX(-50px)";
-  document.querySelector("#socialIconsDiv img:nth-child(4)").style.transform =
-    "translateX(-90px)";
+  // document.querySelector("#socialIconsDiv img:nth-child(4)").style.transform =
+  //   "translateX(-90px)";
   document.querySelector("#socialIconsDiv").style.opacity = "0%";
 
   // setTimeout(() => {
