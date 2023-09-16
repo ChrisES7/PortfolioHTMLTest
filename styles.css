@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
   box-sizing: border-box;
@@ -241,10 +242,11 @@ header ul a:hover {
   /* box-shadow: -6px 5px 18px 5px rgba(0, 0, 0, 0.66); */
 }
 
+h3 {
+  /* color: red; */
+  font-weight: 300;
+}
 .cards {
-
-}
-.cards:nth-child(1),.cards:nth-child(2),.cards:nth-child(3) {
   display: flex;
   align-items: center;
   align-content: center;
@@ -252,64 +254,37 @@ header ul a:hover {
   flex-direction: column;
   border-radius: 20px;
   padding: 25px;
-  box-shadow: -4px 5px 5px 2px rgba(43,43,43,0.65);
-  transform: scale(1);
-  /* border: 1px solid black; */
-  transition: 0.8s ease;
-}
-.cards:nth-child(4),.cards:nth-child(5),.cards:nth-child(6) {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 20px;
-  padding: 25px;
-  box-shadow: -5px 6px 5px 2px rgba(43,43,43,0.65);
-  transform: scale(1);
-  /* border: 1px solid black; */
-  transition: 0.8s ease;
-}
-.cards:nth-child(7),.cards:nth-child(8),.cards:nth-child(9) {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 20px;
-  padding: 25px;
-  box-shadow: -6px 7px 5px 2px rgba(43,43,43,0.65);
+  /* box-shadow: -4px 5px 5px 2px rgba(43,43,43,0.65); */
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+              0 2px 2px rgba(0,0,0,0.12),
+              0 4px 4px rgba(0,0,0,0.12),
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
   transform: scale(1);
   /* border: 1px solid black; */
   transition: 0.8s ease;
 }
 
-.cards:nth-child(1):hover,.cards:nth-child(2):hover,.cards:nth-child(3):hover {
-  /* box-shadow: -6px 5px 18px 5px rgba(0, 0, 0, 0.66); */
-  box-shadow: -6px 6px 10px 4px rgba(43,43,43,0.35);
-  transform: scale(1.08);
-  border: none;
-  transition: 0.8s ease;
-  cursor: pointer;
-}
-.cards:nth-child(4):hover,.cards:nth-child(5):hover,.cards:nth-child(5):hover {
-  /* box-shadow: -6px 5px 18px 5px rgba(0, 0, 0, 0.66); */
-  box-shadow: -7px 8px 10px 4px rgba(43,43,43,0.35);
-  transform: scale(1.08);
-  border: none;
-  transition: 0.8s ease;
-  cursor: pointer;
+.cards:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11),
+              0 2px 2px rgba(0,0,0,0.11),
+              0 4px 4px rgba(0,0,0,0.11),
+              0 8px 8px rgba(0,0,0,0.11),
+              0 16px 16px rgba(0,0,0,0.11),
+              0 32px 32px rgba(0,0,0,0.11);
+
+              transform: scale(1.08);
+              border: none;
+              transition: 0.8s ease;
+              cursor: pointer;
 }
 
-.cards:nth-child(7):hover,.cards:nth-child(8):hover,.cards:nth-child(9):hover {
-  /* box-shadow: -6px 5px 18px 5px rgba(0, 0, 0, 0.66); */
-  box-shadow: -10px 12px 10px 4px rgba(43,43,43,0.35);
-  transform: scale(1.08);
-  border: none;
-  transition: 0.8s ease;
-  cursor: pointer;
-}
 
+/* .cards h3 {
+  color: red;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+} */
 .cards img {
   width: 200px;
   overflow-y: hidden;
@@ -323,7 +298,11 @@ header ul a:hover {
   flex-direction: column;
   border-radius: 20px;
   padding: 25px;
-  box-shadow: -4px 4px 5px 2px rgba(43,43,43,0.65);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+              0 2px 2px rgba(0,0,0,0.12),
+              0 4px 4px rgba(0,0,0,0.12),
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
   transform: scale(1);
   /* border: 1px solid black; */
   transition: 0.8s ease;
@@ -334,7 +313,13 @@ header ul a:hover {
 
 .wideCard:hover {
   /* box-shadow: -6px 5px 18px 5px rgba(0, 0, 0, 0.66); */
-  box-shadow: -6px 6px 10px 4px rgba(43,43,43,0.35);
+  /* box-shadow: -6px 6px 10px 4px rgba(43,43,43,0.35); */
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11),
+              0 2px 2px rgba(0,0,0,0.11),
+              0 4px 4px rgba(0,0,0,0.11),
+              0 8px 8px rgba(0,0,0,0.11),
+              0 16px 16px rgba(0,0,0,0.11),
+              0 32px 32px rgba(0,0,0,0.11);
   transform: scale(1.08);
   border: none;
   transition: 0.8s ease;
