@@ -156,6 +156,7 @@ header ul a:hover {
 #left-main-top {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 #left-main-top-top p {
@@ -354,4 +355,68 @@ h3 {
 
 #titleDiv h1 {
   margin: 5px 0px;
+}
+/*  */
+/*  */
+/*  */
+/* START WITH BIGGEST MEDIA QUERY AFTER MONITOR */
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  h3 {
+    color: yellow;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h3 {
+    color: green;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1340px) {
+  h3 {
+    color: red;
+  }
+
+  #top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    background-color: #293340;
+    min-height: 90%;
+    padding: 20px;
+    margin: 20px;
+  }
+  #right-main-top {
+    width: 75% !important;
+    align-items: center;
+  }
+  #right-main-top h2 {
+    text-align: center;
+    padding-right: 0px;
+  }
+
+
+  #left-main-top {
+    width: 75% !important; /* le left ne change pas a 75% width */
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1340px) {
+  h3 {
+    color: blue;
+  }
+  #right-main-top {
+    width: 40% !important;
+  }
+  #left-main-top {
+    width: 60% !important;
+  }
 }
